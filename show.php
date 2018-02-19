@@ -17,8 +17,8 @@ function Connection(){
 }
 	$link=Connection();
 
-	//$result=mysql_query("SELECT * FROM tempLog ORDER BY timeStamp DESC",$link);
-	$result = mysql_query("SELECT timeStamp, temperature, humidity, light, pH, pump, fog FROM tempLog ORDER BY id DESC LIMIT 1") or die("ไม่สามารถเลือกฐานข้อมูลได้");
+	$result=mysql_query("SELECT * FROM tempLog ORDER BY timeStamp DESC",$link);
+// 	$result = mysql_query("SELECT timeStamp, temperature, humidity, light, pH, pump, fog FROM tempLog ORDER BY id DESC LIMIT 1") or die("ไม่สามารถเลือกฐานข้อมูลได้");
 
 	if($result!==FALSE){
 		while($row = mysql_fetch_array($result)) {

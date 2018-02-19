@@ -1,5 +1,5 @@
 <?php
-function Connection(){
+
 	$server="localhost";
 	$user="root";
 	$pass="hctr77hd";

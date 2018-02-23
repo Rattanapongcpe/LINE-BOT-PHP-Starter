@@ -1,6 +1,6 @@
 <?php
 function Connection(){
-	$server="http://49.231.30.115";
+	$server="localhost";
 	$user="root";
 	$pass="hctr77hd";
 	$db="hydro";
